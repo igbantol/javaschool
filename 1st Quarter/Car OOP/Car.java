@@ -11,7 +11,8 @@ public class Car {
         this.price = price;
     }
 
-    void honk() {
-        System.out.println("Your " + this.brand + " " + this.model + " is honking");
+    void flex() {
+        System.out.println("I have a " + this.model + " " + this.brand + " " + this.model + " that is worth "
+                + this.price + " dollars");
     }
 }
