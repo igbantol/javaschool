@@ -15,4 +15,12 @@ public class Car {
         System.out.println("I have a " + this.model + " " + this.brand + " " + this.model + " that is worth "
                 + this.price + " dollars");
     }
+
+    void honk() {
+        System.out.println("Your " + this.model + " " + this.brand + " is honking");
+    }
+
+    void leak() {
+        System.out.println("Your " + this.model + " " + this.brand + " is leaking oil");
+    }
 }

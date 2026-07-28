@@ -6,5 +6,11 @@ public class Main {
         car1.flex();
         car2.flex();
         car3.flex();
+        car1.honk();
+        car2.honk();
+        car3.honk();
+        car1.leak();
+        car2.leak();
+        car3.leak();
     }
 }
