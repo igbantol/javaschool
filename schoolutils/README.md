@@ -185,6 +185,268 @@ Basic statistics.
 
 ---
 
+## Intermediate Utilities
+
+These classes cover geometry, finance, physics, text analysis, number theory,
+probability, matrices, and randomness (~95 functions).
+
+### GeometryUtils
+
+| Method | Description |
+|--------|-------------|
+| `double circleArea(double r)` | Area of a circle. |
+| `double circleCircumference(double r)` | Circumference of a circle. |
+| `double rectangleArea(double w, double h)` | Area of a rectangle. |
+| `double rectanglePerimeter(double w, double h)` | Perimeter of a rectangle. |
+| `double triangleArea(double b, double h)` | Area of a triangle. |
+| `double squareArea(double s)` | Area of a square. |
+| `double squarePerimeter(double s)` | Perimeter of a square. |
+| `double trapezoidArea(double a, double b, double h)` | Area of a trapezoid. |
+| `double parallelogramArea(double b, double h)` | Area of a parallelogram. |
+| `double rhombusArea(double d1, double d2)` | Area of a rhombus. |
+| `double ellipseArea(double a, double b)` | Area of an ellipse. |
+| `double sphereVolume(double r)` | Volume of a sphere. |
+| `double sphereSurfaceArea(double r)` | Surface area of a sphere. |
+| `double cylinderVolume(double r, double h)` | Volume of a cylinder. |
+| `double cylinderSurfaceArea(double r, double h)` | Surface area of a cylinder. |
+| `double coneVolume(double r, double h)` | Volume of a cone. |
+| `double cubeVolume(double s)` | Volume of a cube. |
+| `double cubeSurfaceArea(double s)` | Surface area of a cube. |
+
+### FinanceUtils
+
+| Method | Description |
+|--------|-------------|
+| `double simpleInterest(double p, double r, double y)` | Simple interest. |
+| `double compoundInterest(double p, double r, int n, double y)` | Compound interest. |
+| `double futureValue(double p, double r, double y)` | Future value. |
+| `double presentValue(double f, double r, double y)` | Present value. |
+| `double monthlyLoanPayment(double p, double r, int m)` | Monthly loan payment. |
+| `double totalInterestPaid(double p, double pay, int m)` | Total interest paid. |
+| `double profit(double rev, double cost)` | Profit. |
+| `double profitMargin(double profit, double rev)` | Profit margin %. |
+| `double markup(double cost, double price)` | Markup %. |
+| `double discountPrice(double price, double off)` | Price after discount. |
+| `double taxAmount(double amt, double rate)` | Tax amount. |
+| `double breakEvenUnits(double fc, double price, double cost)` | Break-even units. |
+| `double percentageChange(double old, double newV)` | % change. |
+| `double savingsAfterYears(double monthly, double r, int y)` | Savings after years. |
+
+### PhysicsUtils
+
+| Method | Description |
+|--------|-------------|
+| `double speed(double d, double t)` | Speed = distance/time. |
+| `double acceleration(double v0, double v1, double t)` | Acceleration. |
+| `double force(double m, double a)` | Force = mass × acceleration. |
+| `double kineticEnergy(double m, double v)` | Kinetic energy. |
+| `double potentialEnergy(double m, double h)` | Gravitational potential energy. |
+| `double work(double f, double d)` | Work done. |
+| `double power(double w, double t)` | Power. |
+| `double density(double m, double v)` | Density. |
+| `double ohmsLawVoltage(double i, double r)` | Voltage = I × R. |
+| `double momentum(double m, double v)` | Momentum. |
+| `double gravitationalForce(double m1, double m2, double d)` | Gravitational force. |
+| `double waveSpeed(double f, double wl)` | Wave speed. |
+| `double pressure(double f, double a)` | Pressure. |
+| `double springForce(double k, double x)` | Spring force. |
+
+### TextAnalysisUtils
+
+| Method | Description |
+|--------|-------------|
+| `int countChar(String s, char c)` | Count of a character. |
+| `int countSentences(String s)` | Count sentence enders. |
+| `String longestWord(String s)` | Longest word. |
+| `String shortestWord(String s)` | Shortest word. |
+| `boolean isAnagram(String a, String b)` | Anagram check. |
+| `char mostFrequentChar(String s)` | Most frequent character. |
+| `String replaceVowels(String s, char r)` | Replace vowels. |
+| `boolean isIsogram(String s)` | Isogram check. |
+| `int countDigits(String s)` | Count digits. |
+| `int countSpecialChars(String s)` | Count special chars. |
+
+### NumberTheoryUtils
+
+| Method | Description |
+|--------|-------------|
+| `boolean isArmstrong(int n)` | Armstrong number check. |
+| `boolean isPerfect(int n)` | Perfect number check. |
+| `boolean isAbundant(int n)` | Abundant number check. |
+| `boolean isDeficient(int n)` | Deficient number check. |
+| `int sumOfDivisors(int n)` | Sum of proper divisors. |
+| `boolean isCoprime(int a, int b)` | Coprime check. |
+| `int eulerTotient(int n)` | Euler's totient. |
+| `int digitSum(int n)` | Sum of digits. |
+| `int reverseNumber(int n)` | Reversed number. |
+| `boolean isHappy(int n)` | Happy number check. |
+| `int numberOfDigits(int n)` | Digit count. |
+| `boolean isPowerOfTwo(int n)` | Power-of-two check. |
+
+### ProbabilityUtils
+
+| Method | Description |
+|--------|-------------|
+| `double combination(int n, int r)` | n choose r. |
+| `double permutation(int n, int r)` | n P r. |
+| `double probabilityOfEvent(int fav, int total)` | Event probability. |
+| `double expectedValue(double[] v, double[] p)` | Expected value. |
+| `double binomialProbability(int n, int k, double p)` | Binomial probability. |
+| `double diceRollProbability(int fav)` | Two-dice probability. |
+| `double conditionalProbability(double pAB, double pB)` | Conditional probability. |
+| `double complementProbability(double p)` | Complement probability. |
+
+### MatrixUtils (int matrices)
+
+| Method | Description |
+|--------|-------------|
+| `void printMatrix(int[][] m)` | Print a matrix. |
+| `int[][] transpose(int[][] m)` | Transpose. |
+| `int[][] addMatrices(int[][] a, int[][] b)` | Add matrices. |
+| `int[][] multiplyMatrices(int[][] a, int[][] b)` | Multiply matrices. |
+| `int[][] scalarMultiply(int[][] m, int s)` | Scalar multiply. |
+| `int[][] identityMatrix(int n)` | Identity matrix. |
+| `boolean isSquare(int[][] m)` | Square check. |
+| `int sumAll(int[][] m)` | Sum of all elements. |
+| `int trace(int[][] m)` | Trace. |
+| `int[][] rotate90(int[][] m)` | Rotate 90°. |
+| `int[] flatten(int[][] m)` | Flatten to 1D. |
+
+### RandomUtils
+
+| Method | Description |
+|--------|-------------|
+| `int randomInt(int min, int max)` | Random int in range. |
+| `double randomDouble()` | Random double 0..1. |
+| `double randomBetween(double min, double max)` | Random double in range. |
+| `boolean randomBoolean()` | Random boolean. |
+| `String randomChoice(String[] opts)` | Random element. |
+| `int rollDie(int sides)` | Roll a die. |
+| `char randomChar()` | Random lowercase letter. |
+| `int[] shuffle(int[] arr)` | In-place shuffle. |
+
+---
+
+## Advanced Utilities
+
+Algorithmic, cryptographic, combinatorial, calculus, statistics, data-structure,
+and linear-algebra helpers (~81 functions).
+
+### AlgorithmUtils
+
+| Method | Description |
+|--------|-------------|
+| `void bubbleSort(int[] arr)` | Bubble sort (in place). |
+| `void selectionSort(int[] arr)` | Selection sort (in place). |
+| `void insertionSort(int[] arr)` | Insertion sort (in place). |
+| `int[] mergeSort(int[] arr)` | Merge sort (returns new array). |
+| `int binarySearch(int[] arr, int t)` | Binary search (sorted). |
+| `int linearSearch(int[] arr, int t)` | Linear search. |
+| `int fibonacciIterative(int n)` | Fibonacci (iterative). |
+| `int fibonacciRecursive(int n)` | Fibonacci (recursive). |
+| `boolean isSorted(int[] arr)` | Sorted check. |
+| `void rotateArray(int[] arr, int k)` | Rotate array by k. |
+| `int longestIncreasingSubsequence(int[] arr)` | LIS length. |
+| `int[] twoSum(int[] arr, int t)` | Two-sum indices. |
+| `int kadaneMaxSubarray(int[] arr)` | Max subarray sum. |
+
+### CryptoUtils
+
+| Method | Description |
+|--------|-------------|
+| `String caesarEncrypt(String t, int s)` | Caesar cipher encrypt. |
+| `String caesarDecrypt(String t, int s)` | Caesar cipher decrypt. |
+| `String rot13(String t)` | ROT13. |
+| `String atbash(String t)` | Atbash cipher. |
+| `String reverseCipher(String t)` | Reversed text. |
+| `String xorCipher(String t, char k)` | XOR cipher. |
+| `String vigenereEncrypt(String t, String k)` | Vigenère encrypt. |
+| `String vigenereDecrypt(String t, String k)` | Vigenère decrypt. |
+| `String simpleHash(String t)` | Simple string hash. |
+| `String sha256Hex(String t)` | SHA-256 hex digest. |
+| `String base64Encode(String t)` | Base64 encode. |
+| `String base64Decode(String t)` | Base64 decode. |
+
+### CombinatoricsUtils
+
+| Method | Description |
+|--------|-------------|
+| `double permutation(int n, int r)` | n P r. |
+| `double combination(int n, int r)` | n C r. |
+| `int factorial(int n)` | Factorial. |
+| `int catalan(int n)` | Catalan number. |
+| `int binomialCoefficient(int n, int k)` | Binomial coefficient. |
+| `int powerSetSize(int n)` | Size of power set. |
+| `int derangements(int n)` | Derangement count. |
+| `int triangularNumber(int n)` | Triangular number. |
+| `int tetrahedralNumber(int n)` | Tetrahedral number. |
+| `int lucasNumber(int n)` | Lucas number. |
+
+### CalculusUtils
+
+| Method | Description |
+|--------|-------------|
+| `double derivative(DoubleUnaryOperator f, double x)` | Numerical derivative. |
+| `double secondDerivative(DoubleUnaryOperator f, double x)` | Second derivative. |
+| `double trapezoidalIntegral(...)` | Trapezoidal integration. |
+| `double simpsonIntegral(...)` | Simpson's integration. |
+| `double riemannSumLeft(...)` | Left Riemann sum. |
+| `double riemannSumRight(...)` | Right Riemann sum. |
+| `double limitFromRight(DoubleUnaryOperator f, double x)` | Right-hand limit. |
+| `double taylorTerm(double x, int n)` | Taylor series term. |
+| `double eApproximation(int terms)` | Approximate e. |
+| `double partialSum(DoubleUnaryOperator t, int n)` | Partial sum. |
+
+### StatisticsAdvancedUtils
+
+| Method | Description |
+|--------|-------------|
+| `double mean(double[] data)` | Mean. |
+| `double covariance(double[] x, double[] y)` | Covariance. |
+| `double correlation(double[] x, double[] y)` | Pearson correlation. |
+| `double linearRegressionSlope(double[] x, double[] y)` | Regression slope. |
+| `double linearRegressionIntercept(double[] x, double[] y)` | Regression intercept. |
+| `double rSquared(double[] x, double[] y)` | R-squared. |
+| `double zScore(double v, double mu, double sigma)` | Z-score. |
+| `double standardError(double[] data)` | Standard error. |
+| `double tStatistic(...)` | t-statistic. |
+| `double normalCDF(double x)` | Normal CDF. |
+| `double confidenceInterval(...)` | Margin of error. |
+
+### DataStructuresUtils
+
+| Method | Description |
+|--------|-------------|
+| `int[] removeDuplicates(int[] arr)` | Dedup array. |
+| `int[] union(int[] a, int[] b)` | Set union. |
+| `int[] intersection(int[] a, int[] b)` | Set intersection. |
+| `int[] difference(int[] a, int[] b)` | Set difference. |
+| `boolean isSubset(int[] sub, int[] set)` | Subset check. |
+| `int secondLargest(int[] arr)` | Second largest. |
+| `int kthLargest(int[] arr, int k)` | Kth largest. |
+| `int[] rotateRight(int[] arr, int k)` | Rotate right. |
+| `int mostFrequent(int[] arr)` | Most frequent value. |
+| `int[] compress(int[] arr)` | Run-length compress. |
+
+### LinearAlgebraUtils
+
+| Method | Description |
+|--------|-------------|
+| `double dotProduct(double[] a, double[] b)` | Dot product. |
+| `double vectorMagnitude(double[] v)` | Vector magnitude. |
+| `double[] crossProduct(double[] a, double[] b)` | Cross product (3D). |
+| `double[][] matrixAdd(double[][] a, double[][] b)` | Add matrices. |
+| `double[][] matrixMultiply(double[][] a, double[][] b)` | Multiply matrices. |
+| `double[][] matrixTranspose(double[][] m)` | Transpose. |
+| `double determinant2x2(double[][] m)` | 2×2 determinant. |
+| `double determinant3x3(double[][] m)` | 3×3 determinant. |
+| `double trace(double[][] m)` | Trace. |
+| `double[][] scalarMultiply(double[][] m, double s)` | Scalar multiply. |
+| `double[][] identityMatrix(int n)` | Identity matrix. |
+| `double[][] inverse2x2(double[][] m)` | 2×2 inverse. |
+
+---
+
 ## License
 
 Free to use for learning and school projects.
