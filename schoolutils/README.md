@@ -447,6 +447,25 @@ and linear-algebra helpers (~81 functions).
 
 ---
 
+## SchoolUtils (catalog)
+
+A helper to list every function in the package from your code.
+
+| Method | Description |
+|--------|-------------|
+| `void listAllFunctions()` | Prints every class and its functions, plus a total. |
+| `String[] allFunctionNames()` | Returns all `Class.method` names as an array. |
+| `int functionCount()` | Returns the total number of functions. |
+
+```java
+import schoolutils.SchoolUtils;
+
+SchoolUtils.listAllFunctions();
+System.out.println("Total: " + SchoolUtils.functionCount());
+```
+
+---
+
 ## License
 
 Free to use for learning and school projects.
