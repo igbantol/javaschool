@@ -5,10 +5,8 @@ public class Product {
     private double price;
     private int stock;
 
-    public Product(String productName, double price, int stock) {
+    public Product(String productName) {
         this.productName = productName;
-        setPrice(price);
-        setStock(stock);
     }
 
     public String getProductName() {
@@ -23,24 +21,26 @@ public class Product {
         return price;
     }
 
-    public void setPrice(double price) {
+    public boolean setPrice(double price) {
         if (price >= 0) {
             this.price = price;
-        } else {
-            System.out.println("Invalid price!");
+            return true;
         }
+        System.out.println("Invalid price!");
+        return false;
     }
 
     public int getStock() {
         return stock;
     }
 
-    public void setStock(int stock) {
+    public boolean setStock(int stock) {
         if (stock >= 0) {
             this.stock = stock;
-        } else {
-            System.out.println("Invalid stock!");
+            return true;
         }
+        System.out.println("Invalid stock!");
+        return false;
     }
 
     public void displayInfo() {
