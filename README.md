@@ -15,6 +15,7 @@ src/
     scannerpkg/       CR.java, Main.java               (quarter1.scannerpkg)
     stringwithscanner/ Main.java                       (quarter1.stringwithscanner)
   quarter2/
+    product/          Product.java, Main.java          (quarter2.product)
     studentgrades/    StudentGrades.java               (quarter2.studentgrades)
 ```
 
@@ -41,6 +42,7 @@ java -cp build quarter1.croop.Main
 java -cp build quarter1.guesser.Guesser
 java -cp build quarter1.scannerpkg.Main
 java -cp build quarter1.stringwithscanner.Main
+java -cp build quarter2.product.Main
 java -cp build quarter2.studentgrades.StudentGrades
 ```
 
