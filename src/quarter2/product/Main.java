@@ -8,24 +8,43 @@ public class Main {
 
         System.out.println("=== Create a New Product ===");
         System.out.print("Enter product name: ");
-        String productName = scanner.nextLine();
+        Product product = new Product(scanner.nextLine());
 
-        System.out.print("Enter price: ");
-        double price = scanner.nextDouble();
+        while (true) {
+            System.out.print("Enter price: ");
+            if (product.setPrice(scanner.nextDouble())) {
+                break;
+            }
+            System.out.println("Try again.");
+        }
 
-        System.out.print("Enter stock: ");
-        int stock = scanner.nextInt();
+        while (true) {
+            System.out.print("Enter stock: ");
+            if (product.setStock(scanner.nextInt())) {
+                break;
+            }
+            System.out.println("Try again.");
+        }
 
-        Product product = new Product(productName, price, stock);
         System.out.println();
         product.displayInfo();
 
         System.out.println("=== Update Price and Stock ===");
-        System.out.print("Enter new price: ");
-        product.setPrice(scanner.nextDouble());
+        while (true) {
+            System.out.print("Enter new price: ");
+            if (product.setPrice(scanner.nextDouble())) {
+                break;
+            }
+            System.out.println("Try again.");
+        }
 
-        System.out.print("Enter new stock: ");
-        product.setStock(scanner.nextInt());
+        while (true) {
+            System.out.print("Enter new stock: ");
+            if (product.setStock(scanner.nextInt())) {
+                break;
+            }
+            System.out.println("Try again.");
+        }
 
         System.out.println();
         product.displayInfo();
